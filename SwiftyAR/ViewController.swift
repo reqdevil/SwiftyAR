@@ -22,7 +22,9 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         
         // Show statistics such as fps and timing information
         sceneView.showsStatistics = false
+        // Showing yellow dots, stands for how AR understanding the real world
         sceneView.debugOptions = [.showFeaturePoints]
+        // Creates a light, therefore objects are more beautiful to see
         sceneView.autoenablesDefaultLighting = true
         
         // Show a cube shape to the screen
