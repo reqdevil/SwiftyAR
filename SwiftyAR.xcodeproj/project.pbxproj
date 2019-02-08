@@ -7,19 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E607291F220E1E0D00E11366 /* PlanetSelectorVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E607291E220E1E0D00E11366 /* PlanetSelectorVC.swift */; };
+		E6072921220E201100E11366 /* PlanetCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6072920220E201100E11366 /* PlanetCell.swift */; };
+		E6072927220E21DD00E11366 /* DataServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6072926220E21DD00E11366 /* DataServices.swift */; };
+		E6072929220E21EB00E11366 /* Planet.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6072928220E21EB00E11366 /* Planet.swift */; };
 		E66AFEE3220DE602006CB2BC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E66AFEE2220DE602006CB2BC /* AppDelegate.swift */; };
 		E66AFEE5220DE602006CB2BC /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = E66AFEE4220DE602006CB2BC /* art.scnassets */; };
-		E66AFEE7220DE602006CB2BC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E66AFEE6220DE602006CB2BC /* ViewController.swift */; };
+		E66AFEE7220DE602006CB2BC /* PlanetViewerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E66AFEE6220DE602006CB2BC /* PlanetViewerVC.swift */; };
 		E66AFEEA220DE602006CB2BC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E66AFEE8220DE602006CB2BC /* Main.storyboard */; };
 		E66AFEEC220DE603006CB2BC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E66AFEEB220DE603006CB2BC /* Assets.xcassets */; };
 		E66AFEEF220DE603006CB2BC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E66AFEED220DE603006CB2BC /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E607291E220E1E0D00E11366 /* PlanetSelectorVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetSelectorVC.swift; sourceTree = "<group>"; };
+		E6072920220E201100E11366 /* PlanetCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetCell.swift; sourceTree = "<group>"; };
+		E6072926220E21DD00E11366 /* DataServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataServices.swift; sourceTree = "<group>"; };
+		E6072928220E21EB00E11366 /* Planet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Planet.swift; sourceTree = "<group>"; };
 		E66AFEDF220DE602006CB2BC /* SwiftyAR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftyAR.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E66AFEE2220DE602006CB2BC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E66AFEE4220DE602006CB2BC /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
-		E66AFEE6220DE602006CB2BC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E66AFEE6220DE602006CB2BC /* PlanetViewerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetViewerVC.swift; sourceTree = "<group>"; };
 		E66AFEE9220DE602006CB2BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E66AFEEB220DE603006CB2BC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E66AFEEE220DE603006CB2BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -37,6 +45,39 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E6072922220E204F00E11366 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E607291E220E1E0D00E11366 /* PlanetSelectorVC.swift */,
+				E66AFEE6220DE602006CB2BC /* PlanetViewerVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		E6072923220E205800E11366 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E6072920220E201100E11366 /* PlanetCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E6072924220E206100E11366 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E6072928220E21EB00E11366 /* Planet.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E6072925220E21D200E11366 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				E6072926220E21DD00E11366 /* DataServices.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		E66AFED6220DE602006CB2BC = {
 			isa = PBXGroup;
 			children = (
@@ -56,11 +97,14 @@
 		E66AFEE1220DE602006CB2BC /* SwiftyAR */ = {
 			isa = PBXGroup;
 			children = (
+				E6072925220E21D200E11366 /* Services */,
+				E6072924220E206100E11366 /* Model */,
+				E6072923220E205800E11366 /* View */,
+				E6072922220E204F00E11366 /* Controller */,
 				E66AFEE2220DE602006CB2BC /* AppDelegate.swift */,
-				E66AFEE4220DE602006CB2BC /* art.scnassets */,
-				E66AFEE6220DE602006CB2BC /* ViewController.swift */,
 				E66AFEE8220DE602006CB2BC /* Main.storyboard */,
 				E66AFEEB220DE603006CB2BC /* Assets.xcassets */,
+				E66AFEE4220DE602006CB2BC /* art.scnassets */,
 				E66AFEED220DE603006CB2BC /* LaunchScreen.storyboard */,
 				E66AFEF0220DE603006CB2BC /* Info.plist */,
 			);
@@ -139,8 +183,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E66AFEE7220DE602006CB2BC /* ViewController.swift in Sources */,
+				E6072927220E21DD00E11366 /* DataServices.swift in Sources */,
+				E607291F220E1E0D00E11366 /* PlanetSelectorVC.swift in Sources */,
+				E66AFEE7220DE602006CB2BC /* PlanetViewerVC.swift in Sources */,
+				E6072929220E21EB00E11366 /* Planet.swift in Sources */,
 				E66AFEE3220DE602006CB2BC /* AppDelegate.swift in Sources */,
+				E6072921220E201100E11366 /* PlanetCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
