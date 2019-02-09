@@ -11,6 +11,8 @@ import Foundation
 class DataServices {
     static let instance = DataServices()
     
+    
+    // Local Database
     private var planetList = [
         Planet(name: "sun"),
         Planet(name: "mercury"),
